@@ -1,10 +1,16 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+*/
+
 import SwiftUI
 
 @main
 struct ScrumdingerApp: App {
     var body: some Scene {
         WindowGroup {
-            ScrumsView(scrums: DailyScrum.sampleData)
+            NavigationView {
+                ScrumsView(scrums: DailyScrum.sampleData)
+            }
         }
     }
 }
